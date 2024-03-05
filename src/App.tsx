@@ -1,6 +1,11 @@
 import React from "react";
 import "./App.css";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
@@ -8,42 +13,18 @@ function App(): JSX.Element {
             <header className="App-header">
                 <h1>UD CISC275 with React Hooks and TypeScript</h1>
             </header>
-            <Container>
-                <Row>
-                    <Col>
-                        <img
-                            style={{ width: "300px", height: "300px" }}
-                            src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg"
-                            alt="Linux Penguin"
-                        />
-                        <div
-                            style={{
-                                height: "100px",
-                                width: "100px",
-                                backgroundColor: "red"
-                            }}
-                        ></div>
-                    </Col>
-                    <Col>
-                        <p>Trung Nguyen Hello World Test1</p>
-                        <Button onClick={() => console.log("Hello World!")}>
-                            Log Hello World
-                        </Button>
-                        <ul style={{ textDecoration: "none" }}>
-                            <li>Why</li>
-                            <li>Do</li>
-                            <li>This</li>
-                        </ul>
-                        <div
-                            style={{
-                                height: "100px",
-                                width: "100px",
-                                backgroundColor: "red"
-                            }}
-                        ></div>
-                    </Col>
-                </Row>
-            </Container>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
