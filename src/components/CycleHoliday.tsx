@@ -1,4 +1,4 @@
-import { time } from "console";
+//import { time } from "console";
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 export type TimeOfYear = "Spring" | "Summer" | "Fall" | "Winter" | "End";
@@ -27,8 +27,8 @@ export function CycleHoliday(): JSX.Element {
     return (
         <div>
             Holiday: 😀 {currTime}
-            <button onClick={nextYear}>Cycle by Year</button>
-            <button onClick={nextAlpha}>Cycle by Alphabet</button>
+            <Button onClick={nextYear}>Cycle by Year</Button>
+            <Button onClick={nextAlpha}>Cycle by Alphabet</Button>
         </div>
     );
 }

@@ -24,11 +24,11 @@ export function TwoDice(): JSX.Element {
         <div>
             <span data-testid="left-die">
                 {dice1}
-                <button onClick={rollDice1}>Roll Left</button>
+                <Button onClick={rollDice1}>Roll Left</Button>
             </span>
             <span data-testid="right-die">
                 {dice2}
-                <button onClick={rollDice2}>Roll Right</button>
+                <Button onClick={rollDice2}>Roll Right</Button>
             </span>
             {dice1 === dice2 && dice1 === 1 && "Lose"}
             {dice1 === dice2 && dice1 != 1 && "Win"}

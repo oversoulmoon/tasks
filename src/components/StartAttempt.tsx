@@ -16,19 +16,19 @@ export function StartAttempt(): JSX.Element {
     };
     return (
         <div>
-            <button
+            <Button
                 onClick={startQuiz}
                 disabled={inProgress || numAttempt === 0}
             >
                 Start Quiz
-            </button>
+            </Button>
             {numAttempt}
-            <button onClick={mulligan} disabled={inProgress}>
+            <Button onClick={mulligan} disabled={inProgress}>
                 Mulligan
-            </button>
-            <button onClick={stopQuiz} disabled={!inProgress}>
+            </Button>
+            <Button onClick={stopQuiz} disabled={!inProgress}>
                 Stop Quiz
-            </button>
+            </Button>
         </div>
     );
 }
