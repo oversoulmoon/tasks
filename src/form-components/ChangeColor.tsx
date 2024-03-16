@@ -30,7 +30,6 @@ export function ChangeColor(): JSX.Element {
                         inline
                     />
                 ))}
-
                 <div
                     data-testid="colored-box"
                     style={{ backgroundColor: currColor }}
