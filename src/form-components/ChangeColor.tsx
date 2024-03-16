@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-import { ShoveBox } from "../bad-components/ShoveBox";
 const colors: string[] = [
     "red",
     "orange",
